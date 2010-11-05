@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: googlemaps
-Version: 1.0.2
+Version: 1.0.3
 Summary: Easy geocoding, reverse geocoding, driving directions, and local search in Python via Google.
 Home-page: http://sourceforge.net/projects/py-googlemaps/
 Author: John Kleint

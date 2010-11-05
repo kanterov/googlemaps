@@ -15,8 +15,6 @@ from distutils.core import setup
 import sys
 
 sys.path.insert(0, 'googlemaps')
-import googlemaps
-
 
 setup(name='googlemaps',
       version=googlemaps.VERSION,

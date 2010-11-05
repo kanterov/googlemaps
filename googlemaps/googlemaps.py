@@ -25,7 +25,7 @@ except ImportError:
     import simplejson as json       # pylint: disable-msg=F0401
 
 
-VERSION = '1.0.2'
+VERSION = '1.0.3'
 __all__ = ['GoogleMaps', 'GoogleMapsError']
 
 

@@ -17,7 +17,7 @@ import sys
 sys.path.insert(0, 'googlemaps')
 
 setup(name='googlemaps',
-      version=1.0.3,
+      version='1.0.3',
       author='John Kleint',
       author_email='py-googlemaps-general@lists.sourceforge.net',
       url='http://sourceforge.net/projects/py-googlemaps/',

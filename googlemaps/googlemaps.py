@@ -28,6 +28,7 @@ except ImportError:
 VERSION = '1.0.3'
 __all__ = ['GoogleMaps', 'GoogleMapsError']
 
+additional_headers={}
 
 def fetch_json(query_url, params={}, headers={}):       # pylint: disable-msg=W0102
     """Retrieve a JSON object from a (parameterized) URL.
@@ -46,10 +47,12 @@ def fetch_json(query_url, params={}, headers={}):       # pylint: disable-msg=W0
     """
     encoded_params = urllib.urlencode(params)    
     url = query_url + encoded_params
+	
+    headers.update(additional_headers)
+
     request = urllib2.Request(url, headers=headers)
     response = urllib2.urlopen(request)
     return (url, json.load(response))
-        
 
 class GoogleMapsError(Exception):
     """Base class for errors in the :mod:`googlemaps` module.

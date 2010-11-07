@@ -17,13 +17,13 @@ import sys
 sys.path.insert(0, 'googlemaps')
 
 setup(name='googlemaps',
-      version=googlemaps.VERSION,
+      version=1.0.3,
       author='John Kleint',
       author_email='py-googlemaps-general@lists.sourceforge.net',
       url='http://sourceforge.net/projects/py-googlemaps/',
       download_url='https://sourceforge.net/projects/py-googlemaps/files/',
       description='Easy geocoding, reverse geocoding, driving directions, and local search in Python via Google.',
-      long_description=googlemaps.GoogleMaps.__doc__,
+      long_description="",
       package_dir={'': 'googlemaps'},
       py_modules=['googlemaps'],
       provides=['googlemaps'],
